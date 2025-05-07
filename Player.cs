@@ -273,13 +273,6 @@ public class Player : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Direction, 1f, GroundLayer);
         return hit.collider != null;
     }
-    private void OnTriggerStay2D(Collider2D other)
-    {//子オブジェクトの攻撃コライダー用のオブジェクトでもやられるアニメーションが起きてしまうため、
-        if (other.CompareTag("Throns") && !isInvicible)
-        {
-            Damage();
-        }
-    }
     private void A_Collider_On()
     {
         Edge.enabled = false;

@@ -199,6 +199,7 @@ public class Player : MonoBehaviour
             || animator.GetCurrentAnimatorStateInfo(0).IsName("P_Water_A")
             || animator.GetCurrentAnimatorStateInfo(0).IsName("P_Thunder_A")
             || animator.GetCurrentAnimatorStateInfo(0).IsName("P_Ice_A")
+            || animator.GetCurrentAnimatorStateInfo(0).IsName("P_Poison_A")
             )
         {
             attack_collider[0].SetActive(false);//構えの判定off
